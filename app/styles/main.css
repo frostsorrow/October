@@ -1,0 +1,521 @@
+a {
+  font-size: 16px !important;
+}
+.navbar .navbar-collapse > ul.navbar-nav > li:before {
+  content: '';
+  width: 40%;
+  position: absolute;
+  height: 5px;
+  background-color: #93dc8a;
+  bottom: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border-radius: 4px;
+  visibility: hidden;
+  transition: all .1s linear;
+}
+.navbar .navbar-collapse > ul.navbar-nav > li:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+.jumbotron {
+  padding: 0;
+  background-color: #fff;
+}
+.jumbotron .container {
+  background: url(../images/home-header-bg@2x.jpg) no-repeat left top;
+  background-size: 1140px 500px;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+}
+.jumbotron .container .mask {
+  width: 70%;
+  padding-bottom: 40px;
+  background: url(../images/header-transparent.png) no-repeat left top;
+}
+.jumbotron .container .mask .mask-left {
+  padding-left: 20px;
+}
+.jumbotron .container .mask .mask-left:before {
+  content: '';
+  display: table;
+}
+.jumbotron .container .mask .mask-left div {
+  margin-top: 45px;
+  width: 407px;
+  height: 67px;
+  background: url(../images/october-color-logo.svg) no-repeat left top;
+  background-size: 100% 100%;
+  margin-bottom: 0;
+}
+.jumbotron .container .mask .mask-left h4 {
+  margin-top: 0px;
+  line-height: 130px;
+  margin-bottom: 0px;
+}
+.jumbotron .container .mask .mask-left p {
+  margin-bottom: 45px;
+  width: 70%;
+  font-size: 18px;
+  line-height: 35px;
+}
+.jumbotron .container .mask .mask-left .btn-intro {
+  border: 2px solid #D55917;
+  color: #D55917;
+  width: 170px;
+  height: 40px;
+  background-color: #fff;
+  font-size: 16px;
+}
+.jumbotron .container .mask .mask-left .btn-intro:hover {
+  color: #fff;
+  background-color: #D55917;
+}
+.jumbotron .container .mask .mask-left .btn-intro span {
+  padding-right: 10px;
+}
+.jumbotron .container .mask-right {
+  position: absolute;
+  overflow: hidden;
+  right: -22.5px;
+  top: 0;
+  transform: rotate(180deg);
+  animation: change 1s linear .5s;
+  animation-fill-mode: forwards;
+}
+@keyframes change {
+  from {
+    right: -22.5px;
+  }
+  to {
+    right: -500px;
+    visibility: hidden;
+  }
+}
+#joinParty {
+  margin: 60px;
+}
+#joinParty .party-left h2 {
+  margin-top: 20px;
+}
+#joinParty .party-left h4 {
+  margin-top: 40px;
+  margin-bottom: 32px;
+  line-height: 30px;
+}
+#joinParty .party-right {
+  padding-left: 150px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+#joinParty .party-right:before {
+  content: '';
+  width: 150px;
+  height: 250px;
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  background: url(../images/icons-sprite@2x.png) no-repeat 0 0;
+  background-size: 1135px 755px;
+}
+#joinParty .party-right h4 {
+  line-height: 30px;
+}
+#advantages {
+  background-color: #FAFBFC;
+  padding: 50px 0;
+}
+#advantages h3 {
+  font-size: 20px;
+}
+#advantages h3 small {
+  font-size: 16px;
+}
+#advantages p {
+  margin-top: 40px;
+  font-size: 17px;
+  line-height: 170%;
+}
+.bottom-right-hump {
+  left: 80%;
+}
+.bottom-left-hump {
+  right: 80%;
+}
+.right-border {
+  border-right: 1px solid #eee;
+}
+.bottom-border {
+  border-bottom: 1px solid #eee;
+}
+.white-right-bottom-hump:after {
+  content: '';
+  position: absolute;
+  left: 100%;
+  width: 25px;
+  height: 25px;
+  top: 80%;
+  background: url("../images/puzzle-link.svg") no-repeat 0 0;
+}
+.tan-left-bottom-hump:after {
+  content: '';
+  position: absolute;
+  left: -25px;
+  width: 25px;
+  height: 25px;
+  transform: rotate(180deg);
+  top: 80%;
+  background: url("../images/puzzle-link.svg") no-repeat 0px -25px;
+}
+.white-b-right-hump:before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 25px;
+  bottom: -27.3px;
+  z-index: 5;
+  transform: rotate(90deg);
+  background: url("../images/puzzle-link.svg") no-repeat 0 0;
+  left: 80%;
+}
+.tan-b-left-hump:before {
+  background: url("../images/puzzle-link.svg") no-repeat 0px -25px;
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 25px;
+  bottom: -27.3px;
+  z-index: 5;
+  transform: rotate(90deg);
+  right: 80%;
+}
+#reasons {
+  margin: 60px 0;
+}
+#reasons h1 {
+  margin-bottom: 50px;
+}
+#reasons ul > li .square {
+  float: left;
+  width: 20%;
+  position: relative;
+}
+#reasons ul > li .square .name {
+  display: inline-table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: all ease .3s;
+}
+#reasons ul > li .square .name span {
+  display: block;
+  font-size: 24px;
+  padding-top: 140px;
+}
+#reasons ul > li .square .name span:before {
+  content: '';
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  margin-left: -45px;
+}
+#reasons ul > li .square .name.white-right-top-hump:after {
+  content: '';
+  position: absolute;
+  left: 100%;
+  width: 25px;
+  height: 25px;
+  top: 20%;
+  background: url("../images/puzzle-link.svg") no-repeat 0 0;
+}
+#reasons ul > li .square .info {
+  opacity: 0;
+  position: absolute;
+  padding: 20px;
+  background-color: #dc8640;
+  color: #fff;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: rotateY(180deg);
+  transition: all ease .3s;
+  backface-visibility: hidden;
+}
+#reasons ul > li .square .info.tan-left-top-hump:after {
+  content: '';
+  position: absolute;
+  left: -25px;
+  width: 25px;
+  height: 25px;
+  transform: rotate(180deg);
+  top: 20%;
+  background: url("../images/puzzle-link.svg") no-repeat 0px -25px;
+}
+#reasons ul > li .square:hover .name {
+  transform: rotateY(-180deg);
+  opacity: 0;
+}
+#reasons ul > li .square:hover .info {
+  transform: rotateY(0deg);
+  opacity: 1;
+}
+#reasons ul > li .simplistic:before {
+  background: url(../images/icons-sprite@2x.png) no-repeat -157px -90px;
+  background-size: 1135px 755px;
+}
+#reasons ul > li .modern:before {
+  background: url(../images/icons-sprite@2x.png) no-repeat -157px -270px;
+  background-size: 1135px 755px;
+}
+#reasons ul > li .mfp:before {
+  background: url(../images/icons-sprite@2x.png) no-repeat -157px -180px;
+  background-size: 1135px 755px;
+}
+#reasons ul > li .universal:before {
+  background: url(../images/icons-sprite@2x.png) no-repeat -157px 0px;
+  background-size: 1135px 755px;
+}
+#reasons ul > li .extendable:before {
+  background: url(../images/icons-sprite@2x.png) no-repeat -157px -360px;
+  background-size: 1135px 755px;
+}
+#reasons ul > li .ftu:before {
+  background: url(../images/icons-sprite@2x.png) no-repeat -157px -450px;
+  background-size: 1135px 755px;
+}
+#reasons ul > li .reliable:before {
+  background: url(../images/icons-sprite@2x.png) no-repeat -157px -630px;
+  background-size: 1135px 755px;
+}
+#reasons ul > li .fat:before {
+  background: url(../images/icons-sprite@2x.png) no-repeat -157px 0px;
+  background-size: 1135px 755px;
+}
+#reasons ul > li .etl:before {
+  background: url(../images/icons-sprite@2x.png) no-repeat -247px 0px;
+  background-size: 1135px 755px;
+}
+#reasons ul > li .st:before {
+  background: url(../images/icons-sprite@2x.png) no-repeat -247px -90px;
+  background-size: 1135px 755px;
+}
+#data {
+  margin: 80px 0;
+}
+#data ul li {
+  display: inline-block;
+  margin: 5px 0;
+}
+#data ul li span {
+  margin-top: 5px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  font-size: 30px;
+  background-color: #E79B00;
+  margin-right: 2px;
+}
+#data ul li span:first-of-type {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  margin-left: 20px;
+}
+#data ul li span:last-of-type {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  margin-right: 20px;
+}
+#remark {
+  padding: 60px;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #eee;
+}
+#remark .container div {
+  line-height: 40px;
+  font-size: 20px;
+}
+#nowJoin {
+  padding: 80px;
+  background-color: #FAFBFC;
+}
+#subscribe {
+  background-color: #224a5f;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  color: #fff;
+}
+#subscribe .blog {
+  padding-bottom: 10px;
+}
+#subscribe .blog small {
+  color: #8DA6A6;
+  font-size: 16px;
+}
+#subscribe .blog h3 {
+  margin-bottom: 20px;
+}
+#subscribe .blog p {
+  font-size: 18px;
+  line-height: 170%;
+}
+#subscribe .blog a {
+  text-decoration: underline;
+  color: #fff;
+}
+#subscribe form {
+  margin-top: 40px;
+}
+#subscribe form .btn-primary {
+  background-color: #006791;
+}
+#subscribe form .btn {
+  border: none;
+}
+#footer {
+  background-color: #1f3f50;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+#footer ul {
+  float: left;
+}
+#footer ul a {
+  color: #8DA6A6;
+}
+#footer .links {
+  overflow: hidden;
+}
+#footer .links ul {
+  width: 20%;
+}
+#footer .links ul :first-of-type {
+  margin-bottom: 10px;
+}
+#footer .links ul li:first-child a {
+  color: #fff;
+}
+#footer .links ul li {
+  line-height: 30px;
+}
+#footer .footermark {
+  text-align: center;
+  padding: 0;
+}
+#footer .footermark ul {
+  float: right;
+  width: 292px;
+}
+#footer .footermark ul li.context {
+  line-height: 80px;
+  color: #5d7989;
+  font-size: 16px;
+}
+#footer .footermark ul li:first-child a {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background: url(../images/icons-sprite@2x.png) no-repeat -343px 0px;
+  background-size: 1135px 755px;
+}
+@media screen and (min-width: 1200px) {
+  #remark .container div {
+    display: inline-block;
+  }
+  #subscribe input.form-control {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .jumbotron .container .mask {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+  }
+  .jumbotron .container .mask .mask-left {
+    padding-top: 0;
+    padding-left: 20px;
+  }
+  .jumbotron .container .mask .mask-left p {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 990.9px) {
+  #footer .footermark {
+    padding-top: 30px;
+    text-align: left ;
+  }
+  #footer .footermark ul {
+    float: left;
+    margin-left: 15px;
+  }
+  #reasons ul li .square {
+    width: 50%;
+  }
+  #reasons ul li:nth-child(even) div.right-border {
+    border-right: none !important;
+  }
+  #reasons ul li:nth-child(even) div.name:after,
+  #reasons ul li:nth-child(even) div.info:after {
+    display: none;
+  }
+  #reasons ul li:nth-child(5) div.bottom-border {
+    border-right: 1px solid #eee;
+  }
+  #reasons ul li:nth-child(5) div.name:after {
+    content: '';
+    position: absolute;
+    left: 100%;
+    width: 25px;
+    height: 25px;
+    top: 80%;
+    background: url("../images/puzzle-link.svg") no-repeat 0 0;
+  }
+  #reasons ul li:nth-child(5) div.info:after {
+    content: '';
+    position: absolute;
+    left: -25px;
+    width: 25px;
+    height: 25px;
+    transform: rotate(180deg);
+    top: 80%;
+    background: url("../images/puzzle-link.svg") no-repeat 0px -25px;
+  }
+  #reasons ul li:nth-child(6) div.square,
+  #reasons ul li:nth-child(7) div.square,
+  #reasons ul li:nth-child(8) div.square {
+    border-bottom: 1px solid #eee;
+  }
+  #reasons ul li:nth-child(6) div.name:before,
+  #reasons ul li:nth-child(7) div.name:before,
+  #reasons ul li:nth-child(8) div.name:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    bottom: -27.3px;
+    z-index: 5;
+    transform: rotate(90deg);
+    background: url("../images/puzzle-link.svg") no-repeat 0 0;
+    left: 80%;
+  }
+  #reasons ul li:nth-child(6) div.info:before,
+  #reasons ul li:nth-child(7) div.info:before,
+  #reasons ul li:nth-child(8) div.info:before {
+    background: url("../images/puzzle-link.svg") no-repeat 0px -25px;
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    bottom: -27.3px;
+    z-index: 5;
+    transform: rotate(90deg);
+    right: 80%;
+  }
+}

@@ -1,0 +1,614 @@
+@green-light:#93dc8a;
+@green:#8DA6A6;
+@green-color:#5d7989;
+@green-dark:rgb(34,74,95);
+@green-darker:rgb(31,63,80);
+@brown:#D55917;
+@brown-light:#E79B00;
+@grey-bg:#FAFBFC;
+@suscribe-btn-bg:#006791;
+
+a{
+    font-size: 16px !important;
+}
+//导航条
+.navbar {
+  .navbar-collapse {
+    > ul.navbar-nav {
+      > li {
+        &:before {
+          //position: relative;
+          content: '';
+          width: 40%;
+          position: absolute;
+          height: 5px;
+          background-color: @green-light;
+          bottom: 0;
+          margin: 0 auto;
+          left: 0;
+          right: 0;
+          border-radius: 4px;
+          visibility: hidden;
+          //display: none;
+          transition: all .1s linear;
+        }
+        &:hover {
+          &:before {
+            visibility: visible;
+            //display: block;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.jumbotron {
+  padding: 0;
+  background-color: #fff;
+  .container {
+    background: url(../images/home-header-bg@2x.jpg) no-repeat left top;
+    background-size: 1140px 500px;
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    .mask {
+
+      width: 70%;
+      //padding-top: 40px;
+      padding-bottom: 40px;
+      background: url(../images/header-transparent.png) no-repeat left top;
+      .mask-left {
+
+        padding-left: 20px;
+
+        &:before{
+            content: '';
+            display: table;
+        }
+        div {
+          margin-top: 45px;
+          width: 407px;
+          height: 67px;
+          background: url(../images/october-color-logo.svg) no-repeat left top;
+          background-size: 100% 100%;
+          margin-bottom: 0;
+        }
+        h4 {
+          margin-top: 0px;
+          line-height: 130px;
+          margin-bottom: 0px;
+        }
+        p {
+          //margin-top: 45px;
+          margin-bottom: 45px;
+          width: 70%;
+          font-size: 18px;
+          line-height: 35px;
+        }
+        .btn-intro {
+          border: 2px solid @brown;
+          color: @brown;
+          width: 170px;
+          height: 40px;
+          background-color: #fff;
+          font-size: 16px;
+          &:hover {
+            color: #fff;
+            background-color: @brown;
+          }
+          span {
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+    .mask-right {
+      position: absolute;
+      overflow: hidden;
+      right: -22.5px;
+      top: 0;
+      transform: rotate(180deg);
+      animation: change 1s linear .5s;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+@keyframes change {
+  from {
+    right: -22.5px;
+  }
+  to {
+    right: -500px;
+    visibility: hidden;
+  }
+}
+
+//join the party
+#joinParty {
+  margin: 60px;
+  .party-left {
+    h2 {
+      margin-top: 20px;
+    }
+    h4 {
+      margin-top: 40px;
+      margin-bottom: 32px;
+      line-height: 30px;
+    }
+  }
+  .party-right {
+    &:before {
+      content: '';
+      width: 150px;
+      height: 250px;
+      display: inline-block;
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      background: url(../images/icons-sprite@2x.png) no-repeat 0 0;
+      background-size: 1135px 755px;
+    }
+  ;
+    padding-left: 150px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    h4 {
+      line-height: 30px;
+    }
+  }
+}
+
+#advantages {
+  background-color: @grey-bg;
+  padding: 50px 0;
+  h3 {
+    font-size: 20px;
+    small {
+      font-size: 16px;
+    }
+  }
+  p {
+    margin-top: 40px;
+    font-size: 17px;
+    line-height: 170%;
+  }
+}
+
+//图片凸起部分的class
+//底部凸起
+.bottom-hump() {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 25px;
+  bottom: -27.3px;
+  z-index: 5;
+  transform: rotate(90deg);
+}
+
+//底部右侧凸起
+.bottom-right-hump {
+  left: 80%;
+}
+
+//底部左侧凸起
+.bottom-left-hump {
+  right: 80%;
+}
+
+//凸起为白色
+.white-hump() {
+  background: url("../images/puzzle-link.svg") no-repeat 0 0;
+}
+
+//凸起为棕色
+.tan-hump() {
+  background: url("../images/puzzle-link.svg") no-repeat 0px -25px;
+}
+
+//右侧凸起
+.right-hump() {
+  content: '';
+  position: absolute;
+  left: 100%;
+  width: 25px;
+  height: 25px;
+}
+
+//右上角凸起
+.right-top-hump() {
+  top: 20%
+}
+
+//右下角凸起
+.right-bottom-hump() {
+  top: 80%
+}
+
+//左侧突起
+.left-hump() {
+  content: '';
+  position: absolute;
+  left: -25px;
+  width: 25px;
+  height: 25px;
+  transform: rotate(180deg);
+}
+
+//左/右上凸起
+.right-top-hump() {
+  top: 20%
+}
+
+.left-top-hump() {
+  top: 20%
+}
+
+//左/右下凸起
+.right-bottom-hump() {
+  top: 80%
+}
+
+.left-bottom-hump() {
+  top: 80%
+}
+
+//右侧和底侧边界
+.right-border {
+  border-right: 1px solid #eee;
+}
+
+.bottom-border {
+  border-bottom: 1px solid #eee;
+}
+
+.white-right-bottom-hump {
+  &:after {
+    .right-hump;
+    .right-bottom-hump;
+    .white-hump;
+  }
+}
+
+.tan-left-bottom-hump {
+  &:after {
+    .left-hump;
+    .left-bottom-hump;
+    .tan-hump;
+  }
+}
+
+.white-b-right-hump {
+  &:before {
+    .bottom-hump;
+    .white-hump;
+    .bottom-right-hump
+  }
+}
+
+.tan-b-left-hump {
+  &:before {
+    .tan-hump;
+    .bottom-hump;
+    .bottom-left-hump
+  }
+}
+
+#reasons {
+  margin: 60px 0;
+  h1 {
+    margin-bottom: 50px;
+  }
+  ul > li {
+    .square {
+      float: left;
+      width: 20%;
+      position: relative;
+      .name {
+        display: inline-table;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        transition: all ease .3s;
+        span {
+          display: block;
+          font-size: 24px;
+          padding-top: 140px;
+          &:before {
+            content: '';
+            width: 90px;
+            height: 90px;
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            margin-left: -45px;
+          }
+        }
+      }
+      .name.white-right-top-hump {
+        &:after {
+          .right-hump;
+          .right-top-hump;
+          .white-hump;
+        }
+      }
+      .info {
+        opacity: 0;
+        position: absolute;
+        padding: 20px;
+        background-color: #dc8640;
+        color: #fff;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform: rotateY(180deg);
+        transition: all ease .3s;
+        backface-visibility: hidden;
+      }
+      .info.tan-left-top-hump {
+        &:after {
+          .left-hump;
+          .left-top-hump;
+          .tan-hump;
+        }
+      }
+      &:hover {
+        .name {
+          transform: rotateY(-180deg);
+          opacity: 0;
+        }
+        .info {
+          transform: rotateY(0deg);
+          opacity: 1;
+        }
+      }
+    }
+    .simplistic:before {
+      background: url(../images/icons-sprite@2x.png) no-repeat -157px -90px;
+      background-size: 1135px 755px;
+    }
+    .modern:before {
+      background: url(../images/icons-sprite@2x.png) no-repeat -157px -270px;
+      background-size: 1135px 755px;
+    }
+    .mfp:before {
+      background: url(../images/icons-sprite@2x.png) no-repeat -157px -180px;
+      background-size: 1135px 755px;
+    }
+    .universal:before {
+      background: url(../images/icons-sprite@2x.png) no-repeat -157px 0px;
+      background-size: 1135px 755px;
+    }
+    .extendable:before {
+      background: url(../images/icons-sprite@2x.png) no-repeat -157px -360px;
+      background-size: 1135px 755px;
+    }
+    .ftu:before {
+      background: url(../images/icons-sprite@2x.png) no-repeat -157px -450px;
+      background-size: 1135px 755px;
+    }
+    .reliable:before {
+      background: url(../images/icons-sprite@2x.png) no-repeat -157px -630px;
+      background-size: 1135px 755px;
+    }
+    .fat:before {
+      background: url(../images/icons-sprite@2x.png) no-repeat -157px 0px;
+      background-size: 1135px 755px;
+    }
+    .etl:before {
+      background: url(../images/icons-sprite@2x.png) no-repeat -247px 0px;
+      background-size: 1135px 755px;
+    }
+    .st:before {
+      background: url(../images/icons-sprite@2x.png) no-repeat -247px -90px;
+      background-size: 1135px 755px;
+    }
+  }
+}
+
+//分页数据部分
+#data {
+  margin: 80px 0;
+  ul li {
+    display: inline-block;
+    margin: 5px 0;
+    span {
+      margin-top: 5px;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      color: #fff;
+      font-size: 30px;
+      background-color: @brown-light;
+      margin-right: 2px;
+      &:first-of-type {
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        margin-left: 20px;
+      }
+      &:last-of-type {
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+//头像与签名
+#remark {
+  padding: 60px;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #eee;
+  .container div {
+    line-height: 40px;
+    font-size: 20px;
+  }
+}
+
+#nowJoin {
+  padding: 80px;
+  background-color: @grey-bg;
+}
+
+#subscribe {
+  background-color: @green-dark;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  color: #fff;
+
+  .blog {
+    padding-bottom: 10px;
+    small{
+        color: @green;
+        font-size: 16px;
+    }
+    h3 {
+      margin-bottom: 20px;
+    }
+    p{
+      font-size:18px;
+      line-height:170%;
+    }
+    a{
+        text-decoration: underline;
+        color: #fff;
+    }
+  }
+  form {
+    margin-top: 40px;
+    .btn-primary{
+      background-color:@suscribe-btn-bg;
+    }
+
+    .btn{
+      border:none;
+    }
+  }
+}
+
+#footer {
+  background-color: @green-darker;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  ul {
+    float: left;
+    a{
+        color: @green;
+    }
+  }
+  .links {
+    overflow: hidden;
+    ul {
+    width: 20%;
+    :first-of-type {
+      margin-bottom: 10px;
+    }
+    li:first-child a{
+        color: #fff;
+    }
+    li {
+      line-height: 30px;
+    }
+  }}
+  .footermark {
+    text-align: center;
+    padding:0;
+    ul {
+      float: right;
+      width: 292px;
+      li.context {
+        line-height: 80px;
+        color:@green-color;
+        font-size: 16px;
+      }
+      li:first-child{
+          a{
+              display: block;
+              width: 100%;
+              height: 50px;
+              background: url(../images/icons-sprite@2x.png) no-repeat -343px 0px;
+              background-size: 1135px 755px;
+          }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #remark .container div {
+    display: inline-block;
+  }
+  #subscribe input.form-control{
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .jumbotron .container .mask {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    .mask-left {
+      padding-top: 0;
+      padding-left: 20px;
+      p {
+      width: 100%;
+    }
+    }
+  }
+}
+
+@media screen and (max-width: 990.9px) {
+  #footer .footermark{
+    padding-top: 30px;
+    text-align: left ;
+    ul{
+      float: left;
+      margin-left: 15px;
+    }
+  }
+  #reasons {
+    ul li {
+      .square {
+        width: 50%;
+      }
+      &:nth-child(even) {
+        div.right-border {
+          border-right: none !important;
+        }
+        div.name, div.info {
+          &:after {
+            display: none;
+          }
+        }
+      }
+      &:nth-child(5) {
+        div.bottom-border {
+          .right-border
+        }
+        div.name {
+          .white-right-bottom-hump
+        }
+        div.info {
+          .tan-left-bottom-hump
+        }
+      }
+      &:nth-child(6), &:nth-child(7), &:nth-child(8) {
+        div.square {
+          .bottom-border
+        }
+        div.name {
+          .white-b-right-hump
+        }
+        div.info {
+          .tan-b-left-hump
+        }
+      }
+    }
+  }
+}
